@@ -3,7 +3,7 @@ import pyvista as pv
 from netCDF4 import Dataset
 
 # Load the NetCDF data
-nc_file = './data/fictional_pm10_3d_50x50x15_timelapse_fixed.nc'
+nc_file = './data/custom/fictional_pm10_3d_50x50x15_timelapse_fixed.nc'
 
 with Dataset(nc_file) as nc:
     # Take the first time step

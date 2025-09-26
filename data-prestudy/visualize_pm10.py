@@ -5,7 +5,7 @@ from mpl_toolkits.mplot3d import Axes3D  # noqa: F401
 from matplotlib import cm
 
 # Load NetCDF
-nc_file = './data/fictional_pm10_3d_50x50x15_timelapse_fixed.nc'
+nc_file = './data/custom/fictional_pm10_3d_50x50x15_timelapse_fixed.nc'
 with Dataset(nc_file) as nc:
     pm10 = nc.variables['kc_PM10'][0]  # first time step
     x = nc.variables['x'][:]
